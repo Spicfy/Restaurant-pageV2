@@ -1,6 +1,7 @@
 import './style.css';
 import loadHome from './home';
-
+import loadContact from './contact';
+import loadMenu from './menu';
 
 function createTabs(){
     const homeBtn = document.getElementById('home');
@@ -13,9 +14,11 @@ function createTabs(){
     })
     menuBtn.addEventListener('click', () =>{
         clearContent();
+        loadMenu();
     })
     contactBtn.addEventListener('click', () =>{
         clearContent();
+        loadContact();
     })
 }
 
